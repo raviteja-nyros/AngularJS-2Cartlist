@@ -1,6 +1,6 @@
-#ng2-ecommerce
+#ecommerce
 
-An e-commerce portal with Product Listing Page, Product Detail Page etc developed using angular2.
+An e-commerce portal with Product Listing Page developed using angular2.
 
 
 ##How to Run this application??
