@@ -1,0 +1,13 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160725163759",
+    "node": "registry:dt/node#6.0.0+20160831021119"
+  },
+  "dependencies": {
+    "body-parser": "registry:dt/body-parser#0.0.0+20160726204056",
+    "express": "registry:dt/express#4.0.0+20161115070701",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20161228005052",
+    "mime": "registry:dt/mime#0.0.0+20160428043022",
+    "serve-static": "registry:dt/serve-static#1.7.1+20161128184045"
+  }
+}

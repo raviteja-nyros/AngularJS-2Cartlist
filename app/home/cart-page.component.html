@@ -1,0 +1,66 @@
+<div class="bs-callout bs-callout-info">Please make sure of your orders before proceeding to payment</div>
+<ul class="row col-md-9 col-xs-12 col-lg-8" *ngIf="cart">
+    <li class="" *ngFor='let cartdetails of cart'>
+        <div class='panel-body'>
+            <div class='row table-border'>
+                <div class='col-md-6'>
+                    <div class='row'>
+                        <div class='col-md-3'>Name:</div>
+                        <div class='col-md-6'>{{cartdetails.productName}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-3'>Code:</div>
+                        <div class='col-md-6'>{{cartdetails.productCode}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-3'>Description:</div>
+                        <div class='col-md-6'>{{cartdetails.description}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-3'>Availability:</div>
+                        <div class='col-md-6'>{{cartdetails.stock}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-3'>Price:</div>
+                        <div class='col-md-6'>{{cartdetails.price|currency:'USD':true}}</div>
+                    </div>
+
+                </div>
+
+                <div class='col-md-6'>
+                    <img class='center-block img-responsive'
+                         [style.width.px]='200'
+                         [style.margin.px]='2'
+                         [src]='cartdetails.imageUrl'
+                         [title]='cartdetails.productName'>
+                </div>
+                <br/>
+                <div class="col-md-12">
+                    <button (click)='deleteProduct(cartdetails.productId)' attr.data-id='{{cartdetails.productId}}'
+                            class='btn btn-default'>Remove
+                    </button>
+                </div>
+            </div>
+        </div>
+    </li>
+    <hr>
+    <div class='col-md-8 amnt-padding'>Total Amount is <b>{{cartAmount|currency:'USD':true}}</b></div>
+    <br/><br/>
+    <div class="amnt-padding">
+        <button type="button" class="btn btn-primary">Make Payment</button>
+    </div>
+</ul>
+<br/>
+<div>
+    <button type="button" (click)='removeAllProducts()' class="btn btn-primary clear-all-margin">Clear Cart</button>
+</div><br/>
+<div class='col-md-3 text-justify disclaimer'><b>Disclaimer:</b>
+    <div>Payment While availing any of the payment method/s available on the Website,
+        we will not be responsible or assume any liability,
+        whatsoever in respect of any loss or damage arising directly or indirectly to You.
+    </div>
+</div>
+
+<div *ngIf="!cart">No Products</div>
+
+         

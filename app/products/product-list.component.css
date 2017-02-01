@@ -1,0 +1,30 @@
+thead {
+    color: #337AB7
+}
+
+.search-margin {
+    margin-left: 25px
+}
+
+.plp-list {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.plp-ul {
+    display: inline;
+}
+
+.brandname {
+    font: 900 12px Lato, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.plp-grid {
+    margin: 50px
+}
+
+.product-details {
+    margin: 20px;
+
+}

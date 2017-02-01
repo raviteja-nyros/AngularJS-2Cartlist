@@ -1,0 +1,3 @@
+remove alert on welcome page and show bootstrap dismissable alert on html
+
+get user account details

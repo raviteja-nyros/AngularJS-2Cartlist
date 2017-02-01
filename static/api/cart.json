@@ -1,0 +1,37 @@
+{
+  "cartProducts": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Canon DSLR Camera",
+      "productCode": "GDN-0011",
+      "stock": "Coming Soon",
+      "description": "Canon DSLR Camera",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/canon-pdp.jpeg"
+    },
+    {
+      "id": 8,
+      "productId": 8,
+      "productName": "Micromax 2-in-1",
+      "productCode": "TBX-0022",
+      "stock": "Coming Soon",
+      "description": "15-inch tablet",
+      "price": 11.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/micromax-pdp.jpeg"
+    },
+    {
+      "id": 81,
+      "productId": 81,
+      "productName": "Samsung Curved TV",
+      "productCode": "TBX-0022",
+      "stock": "Available",
+      "description": "15-inch curved FullHD and Smart TV",
+      "price": 11.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/samsung-tv-pdp.jpeg"
+    }
+  ]
+}

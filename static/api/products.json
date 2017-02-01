@@ -1,0 +1,195 @@
+{
+  "productList": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Benetton Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 1.95,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/ucb-pdp.jpeg"
+    },
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Benetton Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 1.95,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/ucb-pdp.jpeg"
+    },
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Benetton Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 1.95,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/ucb-pdp.jpeg"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "productName": "Excalibur Men's Formal Shirt",
+      "stock": "Out Of Stock",
+      "description": "70% Cotton and 30% viscose ",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/am-pdp.jpeg"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "productName": "Excalibur Men's Formal Shirt",
+      "stock": "Out Of Stock",
+      "description": "70% Cotton and 30% viscose ",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/am-pdp.jpeg"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "productName": "Excalibur Men's Formal Shirt",
+      "stock": "Out Of Stock",
+      "description": "70% Cotton and 30% viscose ",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/am-pdp.jpeg"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productName": "Koolpals Men's Formal Shirt ",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 32.99,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productName": "Koolpals Men's Formal Shirt ",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 32.99,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productName": "Koolpals Men's Formal Shirt ",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 32.99,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productName": "Levi's Men's T-Shirt ",
+      "stock": "In-Stock",
+      "description": "100% Cotton",
+      "price": 2.45,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productName": "Levi's Men's T-Shirt ",
+      "stock": "In-Stock",
+      "description": "100% Cotton",
+      "price": 2.45,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productName": "Levi's Men's T-Shirt ",
+      "stock": "In-Stock",
+      "description": "100% Cotton",
+      "price": 2.45,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "productName": "Men's Formal Shirt ",
+      "stock": "Available",
+      "description": "70% Cotton and 30% viscose",
+      "price": 1.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "productName": "Men's Formal Shirt ",
+      "stock": "Available",
+      "description": "70% Cotton and 30% viscose",
+      "price": 1.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "productName": "Men's Formal Shirt ",
+      "stock": "Available",
+      "description": "70% Cotton and 30% viscose",
+      "price": 1.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 3.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+    },
+    {
+      "id":6,
+      "productId": 6,
+      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 3.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+    },
+    {
+      "id":6,
+      "productId": 6,
+      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 3.55,
+      "starRating": 3.7,
+      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "productName": "Koolpals Men's Formal Shirt ",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 18.9,
+      "starRating": 4.8,
+      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+    }
+
+  ]
+}

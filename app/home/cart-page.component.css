@@ -1,0 +1,27 @@
+ul li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+div.table-border {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 25px
+}
+
+.amnt-padding {
+    padding-left: 50px
+}
+
+ol#myList {
+    list-style-type: lower-latin;
+    font-size: 14px !important;
+}
+
+.clear-all-margin {
+    margin-left: 25px;
+}
+
+.disclaimer {
+    padding-left: 25px
+}
