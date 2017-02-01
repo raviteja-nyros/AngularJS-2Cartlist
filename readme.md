@@ -1,4 +1,4 @@
-#ecommerce
+#Ecommerce
 
 An e-commerce portal with Product Listing Page developed using angular2.
 
