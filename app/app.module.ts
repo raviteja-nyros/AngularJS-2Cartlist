@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 import { ProductDetailGuard } from './products/product-guard';
 import { ProductListGuard } from './products/product-list.guard';
 import { ProductFilterPipe } from './products/product-filter.pipe';
+import { OrderByPipe } from './products/orderby.pipe';
 import { StarComponent } from './shared/star.component';
 import { CartButtonComponent } from './shared/cart-floating.component';
 
@@ -37,7 +38,7 @@ import { CartButtonComponent } from './shared/cart-floating.component';
   declarations: [AppComponent, ProductListComponent,
     ProductFilterPipe, StarComponent, WelcomeComponent,
     ProductDetailComponent, HeaderComponent, ProfileComponent,
-    CartButtonComponent, CartPageComponent],
+    CartButtonComponent, CartPageComponent , OrderByPipe],
   providers: [ProductDetailGuard, ProductListGuard],
   bootstrap: [AppComponent]
 })

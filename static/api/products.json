@@ -2,7 +2,6 @@
   "productList": [
     {
       "id": 1,
-      "productId": 1,
       "productName": "Benetton Men's T-Shirt ",
       "stock": "Coming Soon",
       "description": "100% Cotton",
@@ -12,7 +11,6 @@
     },
     {
       "id": 2,
-      "productId": 2,
       "productName": "Benetton Men's T-Shirt (Pack of 3)  ",
       "stock": "Coming Soon",
       "description": "60% Polyester and 40% cotton",
@@ -22,7 +20,6 @@
     },
     {
       "id": 3,
-      "productId": 3,
       "productName": "Benetton Men's T-Shirt- Combo of 2",
       "stock": "Coming Soon",
       "description": "100% Cotton",
@@ -32,7 +29,6 @@
     },
     {
       "id": 4,
-      "productId": 4,
       "productName": "Excalibur Men's Formal Shirt",
       "stock": "Out Of Stock",
       "description": "70% Cotton and 30% viscose ",
@@ -42,7 +38,6 @@
     },
     {
       "id": 5,
-      "productId": 5,
       "productName": "Erbee Men's Cotton Full Sleeve Henley T-Shirt - Combo of 2 ",
       "stock": "Out Of Stock",
       "description": "Material: Cotton; Color:choose any 2 between Black,Gray,White,Blue ",
@@ -52,7 +47,6 @@
     },
     {
       "id": 6,
-      "productId": 6,
       "productName": "ExCollins Men's T-Shirt (Pack of 2) (92718_X-Large_Parrot Green and Anthra) ",
       "stock": "Out Of Stock",
       "description": "52% Cotton and 48% polyester ",
@@ -62,7 +56,6 @@
     },
     {
       "id": 7,
-      "productId": 7,
       "productName": "Koolpals Men's Formal Shirt ",
       "stock": "In-Stock",
       "description": "pure cotton",
@@ -72,7 +65,6 @@
     },
     {
       "id": 8,
-      "productId": 8,
       "productName": "Koolpals Men's Formal Shirt ",
       "stock": "In-Stock",
       "description": "pure cotton",
@@ -82,7 +74,6 @@
     },
     {
       "id": 9,
-      "productId": 9,
       "productName": "Koolpals Men's Formal Shirt ",
       "stock": "In-Stock",
       "description": "pure cotton",
@@ -92,7 +83,6 @@
     },
     {
       "id": 10,
-      "productId": 10,
       "productName": "Levi's Men's T-Shirt ",
       "stock": "In-Stock",
       "description": "100% Cotton",
@@ -102,7 +92,6 @@
     },
     {
       "id": 11,
-      "productId": 11,
       "productName": "Levi's Men's T-Shirt ",
       "stock": "In-Stock",
       "description": "100% Cotton",
@@ -112,7 +101,6 @@
     },
     {
       "id": 12,
-      "productId": 12,
       "productName": "Levi's Men's T-Shirt ",
       "stock": "In-Stock",
       "description": "100% Cotton",
@@ -122,7 +110,6 @@
     },
     {
       "id": 13,
-      "productId": 13,
       "productName": "Men's Formal Shirt ",
       "stock": "Available",
       "description": "70% Cotton and 30% viscose",
@@ -132,7 +119,6 @@
     },
     {
       "id": 14,
-      "productId": 14,
       "productName": "Men's Formal Shirt ",
       "stock": "Available",
       "description": "70% Cotton and 30% viscose",
@@ -142,7 +128,6 @@
     },
     {
       "id": 15,
-      "productId": 15,
       "productName": "Men's Formal Shirt ",
       "stock": "Available",
       "description": "70% Cotton and 30% viscose",
@@ -152,7 +137,6 @@
     },
     {
       "id": 16,
-      "productId": 16,
       "productName": "U.S.Polo.Assn. Men's T-Shirt ",
       "stock": "Coming Soon",
       "description": "100% Cotton",
@@ -162,7 +146,6 @@
     },
     {
       "id": 17,
-      "productId": 17,
       "productName": "U.S.Polo.Assn. Men's T-Shirt ",
       "stock": "Coming Soon",
       "description": "100% Cotton",
@@ -172,7 +155,6 @@
     },
     {
       "id": 18,
-      "productId": 18,
       "productName": "U.S.Polo.Assn. Men's T-Shirt ",
       "stock": "Coming Soon",
       "description": "100% Cotton",
@@ -182,7 +164,6 @@
     },
     {
       "id": 19,
-      "productId": 19,
       "productName": "Koolpals Men's Formal Shirt ",
       "stock": "In-Stock",
       "description": "pure cotton",
