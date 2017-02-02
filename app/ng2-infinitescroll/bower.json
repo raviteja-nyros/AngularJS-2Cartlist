@@ -1,0 +1,27 @@
+{
+  "name": "ng2-infinitescroll",
+  "authors": [
+    "Sharmile M (sharmilesai@gmcail.com)"
+  ],
+  "description": "infinitescroll directive for angular2",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "inifnite-scroll",
+    "angular2-infinite-scroll",
+    "ng2-infinite-scroll",
+    "infinitescroll"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

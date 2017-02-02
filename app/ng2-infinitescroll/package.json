@@ -1,0 +1,48 @@
+{
+  "name": "ng2-infinitescroll",
+  "version": "2.0.0",
+  "description": "inifnite scroll for angular2",
+  "main": "index.js",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.3",
+    "@angular/compiler": "2.0.0-rc.3",
+    "@angular/core": "2.0.0-rc.3",
+    "@angular/platform-browser": "2.0.0-rc.3",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  },
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  },
+  "license": "MIT",
+  "author": "Sharmile M",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmilemurugaraj/ng2-infinite-scroll.git"
+  },
+  "keywords": [
+    "inifnite-scroll",
+    "angular2-infinite-scroll",
+    "ng2-infinite-scroll",
+    "infinitescroll"
+  ],
+  "bugs": {
+    "url": "https://github.com/sharmilemurugaraj/ng2-infinite-scroll"
+  },
+  "homepage": "https://github.com/sharmilemurugaraj/ng2-infinite-scroll#readme"
+}
