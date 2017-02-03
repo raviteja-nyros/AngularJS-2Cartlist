@@ -9,9 +9,28 @@
 
 <hr/>
 <div class="plp-grid">
-    <section class="plp-grid">
+    <section class="plp-grid" infinite-scroll
+                    [infiniteScrollDistance]="2"
+                    [infiniteScrollUpDistance]="1.5"
+                    [infiniteScrollThrottle]="500"
+                    (scrolled)="onScrollDown()"
+                    (scrolledUp)="onScrollUp()">
         <ul class="row plp-ul">
             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of products | productFilter:listFilter | orderby:'!id' ">
+                <div class="prod-visual-section item product-tile">
+                <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                <div class="row product-details">
+                     <div class="brandname">{{product.productName}}</div>
+                    <div class="branddesc">{{product.description}}</div>
+                    <div class="productprice">{{product.price | currency:'USD': true:'1.2-2'}}</div>
+                    <div class="star">
+                        <show-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                    </div>
+                </div>
+                </div>
+            </li>
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of data | productFilter:listFilter | orderby:'!id' ">
                 <div class="prod-visual-section item product-tile">
                 <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
@@ -28,3 +47,6 @@
         </ul>
     </section>
 </div>
+
+
+
