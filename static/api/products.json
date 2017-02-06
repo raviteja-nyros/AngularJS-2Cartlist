@@ -2,175 +2,237 @@
   "productList": [
     {
       "id": 1,
-      "productName": "Benetton Men's T-Shirt ",
+      "productName": "A",
       "stock": "Coming Soon",
       "description": "100% Cotton",
-      "price": 1.95,
+      "price": 140,
       "starRating": 4.5,
-      "imageUrl": "../../../static/assets/images/products/ucb-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/Alaya-Tee-Mock-White.jpg"
     },
     {
       "id": 2,
-      "productName": "Benetton Men's T-Shirt (Pack of 3)  ",
+      "productName": "B",
       "stock": "Coming Soon",
-      "description": "60% Polyester and 40% cotton",
-      "price": 1.95,
+      "description": "100% Cotton",
+      "price": 240,
       "starRating": 4.5,
-      "imageUrl": "../../../static/assets/images/products/test2.jpg"
+      "imageUrl": "../../../static/assets/images/products/pop-mens-2016-brooklyn-nets-logo-tee-shirt-m.jpg"
     },
     {
       "id": 3,
-      "productName": "Benetton Men's T-Shirt- Combo of 2",
+      "productName": "C",
       "stock": "Coming Soon",
       "description": "100% Cotton",
-      "price": 1.95,
+      "price": 340,
       "starRating": 4.5,
-      "imageUrl": "../../../static/assets/images/products/test1-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/images.jpg"
     },
     {
       "id": 4,
-      "productName": "Excalibur Men's Formal Shirt",
+      "productName": "D",
       "stock": "Out Of Stock",
-      "description": "70% Cotton and 30% viscose ",
-      "price": 19.95,
+      "description": "100% Cotton",
+      "price": 440,
       "starRating": 3.2,
-      "imageUrl": "../../../static/assets/images/products/am-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/983e6d8414cbd8798aae596c0c9d9797.jpg"
     },
     {
       "id": 5,
-      "productName": "Erbee Men's Cotton Full Sleeve Henley T-Shirt - Combo of 2 ",
+      "productName": "E",
       "stock": "Out Of Stock",
       "description": "Material: Cotton; Color:choose any 2 between Black,Gray,White,Blue ",
-      "price": 19.95,
+      "price": 540,
       "starRating": 3.2,
-      "imageUrl": "../../../static/assets/images/products/81TLU5qor3L._UL1500_.jpg"
+      "imageUrl": "../../../static/assets/images/products/eminem_e_logo_new_style_t_shirt-2.jpg"
     },
     {
       "id": 6,
-      "productName": "ExCollins Men's T-Shirt (Pack of 2) (92718_X-Large_Parrot Green and Anthra) ",
+      "productName": "F",
       "stock": "Out Of Stock",
       "description": "52% Cotton and 48% polyester ",
-      "price": 19.95,
+      "price": 640,
       "starRating": 3.2,
-      "imageUrl": "../../../static/assets/images/products/91+ZFmKqITL._UL1500_.jpg"
+      "imageUrl": "../../../static/assets/images/products/F-Leopard-T-Shirt-Graphic-Logo-Fashion-Top-Shop-Apparel-Printed-Mens-Womens-Kids-301307602986.jpg"
     },
     {
       "id": 7,
-      "productName": "Koolpals Men's Formal Shirt ",
+      "productName": "G",
       "stock": "In-Stock",
       "description": "pure cotton",
-      "price": 32.99,
+      "price": 740,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/thumb (1).jpg"
     },
     {
       "id": 8,
-      "productName": "Koolpals Men's Formal Shirt ",
+      "productName": "H",
       "stock": "In-Stock",
       "description": "pure cotton",
-      "price": 32.99,
+      "price": 840,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/superman-logo-t-shirt-silver-h.jpg"
     },
     {
       "id": 9,
-      "productName": "Koolpals Men's Formal Shirt ",
+      "productName": "J",
       "stock": "In-Stock",
       "description": "pure cotton",
-      "price": 32.99,
+      "price": 940,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/images (1).jpg"
     },
     {
       "id": 10,
-      "productName": "Levi's Men's T-Shirt ",
+      "productName": "K",
       "stock": "In-Stock",
       "description": "100% Cotton",
-      "price": 2.45,
+      "price": 130,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/2015-men-new-male-plus-size-sports-T-shirt-free-shipping-font-b-Skateboard-b-font.jpg"
     },
     {
       "id": 11,
-      "productName": "Levi's Men's T-Shirt ",
+      "productName": "L",
       "stock": "In-Stock",
-      "description": "100% Cotton",
-      "price": 2.45,
+      "description": "pure cotton",
+      "price": 940,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/Summer-anime-t-font-b-shirt-b-font-font-b-death-b-font-double-L-font.jpg"
     },
     {
       "id": 12,
-      "productName": "Levi's Men's T-Shirt ",
+      "productName": "M",
       "stock": "In-Stock",
-      "description": "100% Cotton",
-      "price": 2.45,
+      "description": "pure cotton",
+      "price": 840,
       "starRating": 4.2,
-      "imageUrl": "../../../static/assets/images/products/levis-pdp.jpeg"
+      "imageUrl": "../../../static/assets/images/products/M120_M_TShirt.jpg"
     },
     {
       "id": 13,
-      "productName": "Men's Formal Shirt ",
-      "stock": "Available",
-      "description": "70% Cotton and 30% viscose",
-      "price": 1.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+      "productName": "A",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 940,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/thumb.jpg"
     },
     {
       "id": 14,
-      "productName": "Men's Formal Shirt ",
-      "stock": "Available",
-      "description": "70% Cotton and 30% viscose",
-      "price": 1.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+      "productName": "P",
+      "stock": "In-Stock",
+      "description": "100% Cotton",
+      "price": 130,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/pvris_p_mock.jpg"
     },
     {
       "id": 15,
-      "productName": "Men's Formal Shirt ",
-      "stock": "Available",
-      "description": "70% Cotton and 30% viscose",
-      "price": 1.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/hi-pdp.jpeg"
+      "productName": "S",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 940,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/Kool-Dezigns-Superman-Logo-T-shirt-700x700.jpg"
     },
     {
       "id": 16,
-      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
-      "stock": "Coming Soon",
+      "productName": "W",
+      "stock": "In-Stock",
       "description": "100% Cotton",
-      "price": 3.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+      "price": 130,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/westworld-logo-t-shirt_272.jpg"
     },
     {
       "id": 17,
-      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
+      "productName": "AA",
       "stock": "Coming Soon",
       "description": "100% Cotton",
-      "price": 3.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+      "price": 140,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/bucks-bunny-boxing-men-s-premium-t-shirt.jpg"
     },
     {
       "id": 18,
-      "productName": "U.S.Polo.Assn. Men's T-Shirt ",
+      "productName": "BB",
       "stock": "Coming Soon",
       "description": "100% Cotton",
-      "price": 3.55,
-      "starRating": 3.7,
-      "imageUrl": "../../../static/assets/images/products/us-pdp.jpeg"
+      "price": 240,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/1195423756210919835ryanlerch_shirt_outline.svg"
     },
     {
       "id": 19,
-      "productName": "Koolpals Men's Formal Shirt ",
+      "productName": "CC",
+      "stock": "Coming Soon",
+      "description": "100% Cotton",
+      "price": 340,
+      "starRating": 4.5,
+      "imageUrl": "../../../static/assets/images/products/3-pcs-set-Good-95-Cotton-Family-T-Shirts-Cartoon-Female-Male-4xl-Girl-Boy-Summer.jpg"
+    },
+    {
+      "id": 20,
+      "productName": "DD",
+      "stock": "Out Of Stock",
+      "description": "100% Cotton",
+      "price": 440,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/39334.jpg"
+    },
+    {
+      "id": 21,
+      "productName": "EE",
+      "stock": "Out Of Stock",
+      "description": "Material: Cotton; Color:choose any 2 between Black,Gray,White,Blue ",
+      "price": 540,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/f838ac998a7b53d8221b8c8dca0b53b3_red-t-shirt-clip-art-clipart-animated-shirt_276-300.png"
+    },
+    {
+      "id": 22,
+      "productName": "FF",
+      "stock": "Out Of Stock",
+      "description": "52% Cotton and 48% polyester ",
+      "price": 640,
+      "starRating": 3.2,
+      "imageUrl": "../../../static/assets/images/products/pocket-monster-pikachu-t-shirt-cartoon-style-plus-size-t-shirts-for-men-83466.jpg"
+    },
+    {
+      "id": 23,
+      "productName": "GG",
       "stock": "In-Stock",
       "description": "pure cotton",
-      "price": 18.9,
-      "starRating": 4.8,
-      "imageUrl": "../../../static/assets/images/products/test-pdp.jpeg"
-    }
-
+      "price": 740,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/jcxpG5eKi.jpeg"
+    },
+    {
+      "id": 24,
+      "productName": "HH",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 840,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/superman-logo-t-shirt-silver-h.jpg"
+    },
+    {
+      "id": 25,
+      "productName": "JJ",
+      "stock": "In-Stock",
+      "description": "pure cotton",
+      "price": 940,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/Unique-Logo-Printed-The-Evolution-Cartoon-T-Shirts-Fitness-Male-t-shirt-New-Arrival-Boys-Popular.jpg"
+    },
+    {
+      "id": 26,
+      "productName": "KK",
+      "stock": "In-Stock",
+      "description": "100% Cotton",
+      "price": 130,
+      "starRating": 4.2,
+      "imageUrl": "../../../static/assets/images/products/2015-men-new-male-plus-size-sports-T-shirt-free-shipping-font-b-Skateboard-b-font.jpg"
+    }  
   ]
 }

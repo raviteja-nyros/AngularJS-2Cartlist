@@ -2,13 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
 import { ProductService } from './product.service';
 import { InfiniteScroll } from 'angular2-infinite-scroll';
+import { OrderByPipe } from "./orderby.pipe";
+
+
+
 
 
 @Component({
   moduleId: module.id, //relative paths with moduleId, where templateUrl/styleUrls get app/products automatically
   templateUrl: 'product-list.html',
   providers: [ InfiniteScroll ],
-  styleUrls: ['product-list.component.css']
+  styleUrls: ['product-list.component.css'],
+  pipes: [ OrderByPipe ]
 })
 
 
@@ -18,11 +23,13 @@ export class ProductListComponent implements OnInit {
   imageHeight: number = 200;
   imageMargin: number = 0;
   showImage: boolean = false;
-  listFilter: string;
+  listFilter: string = '';
+  sortColumn: string;
   products: IProduct[];
   errorMessage: string;
-  data:array = [];
+  data: array[] = [];
 
+  
   constructor(private _productService: ProductService) {
 
   }
@@ -32,11 +39,22 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
-    this._productService.getProducts()
-      .subscribe(products => this.products = products,
+
+
+    this._productService.getProducts().subscribe(products => this.products = products,
+
         data =>this.products.slice(0,5) = data,
+
         error => this.errorMessage = <any>error);
+    products => this.products.sort( function(name1, name2) {
+            if ( name1.productName < name2.productName ){
+                return -1;
+            }else if( name1.productName > name2.productName ){
+                return 1;
+            }else{
+                return 0; 
+            }
+        });
 
   }
 
@@ -47,7 +65,7 @@ export class ProductListComponent implements OnInit {
 
   onScrollDown () {
     //console.log(typeof(this.products))
-    // console.log(this.products.slice(0, 5))
+    //console.log(this.products.slice(0, 5))
     this.data = this.products.slice(0, this.data.length + 5);
     console.log(this.data); 
   }
