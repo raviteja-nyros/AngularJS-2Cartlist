@@ -6,12 +6,7 @@
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
             </div>
         </div><br/>
-        <div class="btn-group" role="group">
-            <button class="btn btn-default"
-                (click)='toggleImage()'>    
-                {{showImage ? 'SortBy' : 'SortBy'}}Name
-            </button> 
-        </div>
+        <button (click)="toggle($clickMe)">sort by name</button>
     </div>
 </div>
 <hr/>
@@ -19,11 +14,11 @@
     <section class="plp-grid" infinite-scroll
                     [infiniteScrollDistance]="1 "
                     [infiniteScrollUpDistance]="1"
-                    [infiniteScrollThrottle]="600"
+                    [infiniteScrollThrottle]="500"
                     (scrolled)="onScrollDown()"
                     (scrolledUp)="onScrollUp()">
         <ul class="row plp-ul">
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of (products ? products.slice(0,16): []) | productFilter:listFilter"   >
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of (products ? products.slice(0,16): []) | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
