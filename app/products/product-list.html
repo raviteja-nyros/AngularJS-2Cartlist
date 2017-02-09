@@ -14,17 +14,9 @@
     <input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" /> Rs 700 and Below<br/>
     <input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 701 - 1500<br/>
     <input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above <br/> 
-<!--     <input type="checkbox" (click)="includePrice('3001,5000')" /> Rs 3000 - 5000 <br/>
-    <input type="checkbox" (click)="includePrice('5001,100000000')" /> Rs 5001 and Above -->
 </div>
- <!-- <li *ngFor = "let ip of iproduct">{{ip.Pprice}}</li> -->
 <div class="plp-grid">
-    <section class="plp-grid" infinite-scroll
-                    [infiniteScrollDistance]="1"
-                    [infiniteScrollUpDistance]="1"
-                    [infiniteScrollThrottle]="500"
-                    (scrolled)="onScrollDown()"
-                    (scrolledUp)="onScrollUp()">
+    <section class="plp-grid">
         <ul class="row plp-ul">
             
             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">

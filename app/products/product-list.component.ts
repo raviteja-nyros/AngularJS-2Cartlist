@@ -31,15 +31,7 @@ export class ProductListComponent implements OnInit {
     iproduct = [];
     price1 = [];
     price2 = [];
-    // public priceFilter: any;
-    // public maxRange: any;
-    // public minRange: any;
 
- 
-
-
-
- 
   constructor(private _productService: ProductService) {
 
   }
@@ -60,9 +52,7 @@ export class ProductListComponent implements OnInit {
       });
   }
   includePrice(x,y,z) {
-      // console.log("---------------")
-      // console.log(this.products)
-      // alert(z)
+
       $(".exam").hide();
       $(".exam1").hide();
       $(".exam2").hide();
@@ -71,20 +61,16 @@ export class ProductListComponent implements OnInit {
       for(var j = 0; j < this.products.length; j++){
         x=0;
         y=this.products[j].price;
-          // console.log("------------------")
-          // console.log(x)
-          // console.log(y)
+
           if(x==0 && y<=700){
-            // this.rk.push('aaaaaaaaa')
+
             this.iproduct.push({Pname: this.products[j].productName, Pprice: this.products[j].price,  Pstock: this.products[j].stock, Pdescription: this.products[j].description, PstarRating: this.products[j].starRating, Pimage: this.products[j].imageUrl});
             console.log(this.iproduct)
           }
       }
   }
   includePrice1(a,b,c) {
-      // console.log("---------------")
-      // console.log(this.products)
-      // alert(c)
+
       $(".exam").hide();
       $(".exam1").hide();
       $(".exam2").show();
@@ -93,21 +79,16 @@ export class ProductListComponent implements OnInit {
       for(var k = 0; k < this.products.length; k++){
         a=701;
         b=this.products[k].price < 1500;
-            // console.log("------------------")
-            // console.log(a)
-            // console.log(b)
+
           if(a>=701 && b ){
-              // console.log(a)
-              // console.log(b)
+
             this.price1.push({Pnname: this.products[k].productName, Pnprice: this.products[k].price,  Pnstock: this.products[k].stock, Pndescription: this.products[k].description, PnstarRating: this.products[k].starRating, Pnimage: this.products[k].imageUrl});
             console.log(this.price1)
           }
       }
   }
   includePrice2(e,f,g) {
-      // console.log("---------------")
-      // console.log(this.products)
-      // alert(c)
+
       $(".exam").hide();
       $(".exam1").hide();
       $(".exam2").hide();
@@ -116,9 +97,7 @@ export class ProductListComponent implements OnInit {
       for(var l = 0; l < this.products.length; l++){
         e=1501;
         f=this.products[l].price > 1501;
-           // console.log("------------------")
-           // console.log(a)
-           // console.log(b)
+
           if(e>=1501 && f){
             this.price2.push({Paname: this.products[l].productName, Paprice: this.products[l].price,  Pnstock: this.products[l].stock, Padescription: this.products[l].description, PastarRating: this.products[l].starRating, Paimage: this.products[l].imageUrl});
             console.log(this.price2)
@@ -134,22 +113,6 @@ export class ProductListComponent implements OnInit {
           data => this.products.slice(0,5) = data;
           error => this.errorMessage = <any>error;
     });
-
-
-
-  // this._productService.getProducts().subscribe(products => this.products = products,
-    //     data => this.products.slice(0,5) = data,
-    //     error => this.errorMessage = <any>error);
-    //       console.log('this.products',this.products)
-    // this.products.sort( function(name1, name2) {
-    //         if ( name1.productName < name2.productName ){
-    //             return -1;
-    //         }else if( name1.productName > name2.productName ){
-    //             return 1;
-    //         }else{
-    //             return 0; 
-    //         }
-    //     });
   }
 
   onRatingClicked(message: string): void {
