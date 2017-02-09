@@ -27,7 +27,7 @@
                     (scrolledUp)="onScrollUp()">
         <ul class="row plp-ul">
             
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.Pimage' [title]='product.PName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </li>
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam2" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
@@ -56,7 +56,7 @@
                 </div>
             </li> 
 
-             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of price2 | productFilter:listFilter">
+             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam3" style="height:330px" *ngFor="let product of price2 | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.Paimage' [title]='product.PaName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </li>
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of (data ? data.slice(16,26): []) | productFilter:listFilter">
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam1" style="height:330px" *ngFor="let product of (data ? data.slice(16,26): []) | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />

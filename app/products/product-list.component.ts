@@ -64,6 +64,10 @@ export class ProductListComponent implements OnInit {
       // console.log(this.products)
       // alert(z)
       $(".exam").hide();
+      $(".exam1").hide();
+      $(".exam2").hide();
+      $(".exam3").hide();
+      $(".exam4").show();
       for(var j = 0; j < this.products.length; j++){
         x=0;
         y=this.products[j].price;
@@ -82,6 +86,10 @@ export class ProductListComponent implements OnInit {
       // console.log(this.products)
       // alert(c)
       $(".exam").hide();
+      $(".exam1").hide();
+      $(".exam2").show();
+      $(".exam3").hide();
+      $(".exam4").hide();
       for(var k = 0; k < this.products.length; k++){
         a=701;
         b=this.products[k].price < 1500;
@@ -101,6 +109,10 @@ export class ProductListComponent implements OnInit {
       // console.log(this.products)
       // alert(c)
       $(".exam").hide();
+      $(".exam1").hide();
+      $(".exam2").hide();
+      $(".exam3").show();
+      $(".exam4").hide();
       for(var l = 0; l < this.products.length; l++){
         e=1501;
         f=this.products[l].price > 1501;
