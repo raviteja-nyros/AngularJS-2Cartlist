@@ -86,7 +86,7 @@
       "productName": "K",
       "stock": "In-Stock",
       "description": "100% Cotton",
-      "price": 130,
+      "price": 830,
       "starRating": 4.2,
       "imageUrl": "../../../static/assets/images/products/2015-men-new-male-plus-size-sports-T-shirt-free-shipping-font-b-Skateboard-b-font.jpg"
     },
@@ -110,7 +110,7 @@
     },
     {
       "id": 13,
-      "productName": "A",
+      "productName": "O",
       "stock": "In-Stock",
       "description": "pure cotton",
       "price": 940,
@@ -122,7 +122,7 @@
       "productName": "P",
       "stock": "In-Stock",
       "description": "100% Cotton",
-      "price": 130,
+      "price": 4130,
       "starRating": 4.2,
       "imageUrl": "../../../static/assets/images/products/pvris_p_mock.jpg"
     },
