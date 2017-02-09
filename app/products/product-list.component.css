@@ -30,15 +30,12 @@ div.star{
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-
 .navbar-fixed-top {
     border: 0;
 }
-
 .page-header{
     padding-top: 50px;
     color: #3D3D3D !important;
-
 }
 .sidebar {
     display: none;
@@ -102,6 +99,6 @@ div.star{
 a{
     color: #3D3D3D !important;
 }
-body{
-    color: #3D3D3D !important;
+hr{
+    border-color:#C1C1C1 !important;
 }

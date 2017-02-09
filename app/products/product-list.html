@@ -4,7 +4,7 @@
             <li>
                 <a><input type="text" class="form-control" [(ngModel)]='listFilter' placeholder="Search for..."></a>
             </li>
-        </ul>
+        </ul><hr/>
         <ul class="nav nav-sidebar ">
             <li>
                 <a><input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" />Rs 700 and Below</a> 
@@ -15,14 +15,14 @@
             <li>
                 <a><input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above</a>
             </li>
-        </ul>
+        </ul><hr/>
         <ul class="nav nav-sidebar">
             <li><a><button class="btn" (click)="toggle($clickMe)">sort by name</button></a></li>
-        </ul>
+        </ul><hr/>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header">Products</h1>
-        <section infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollUpDistance]="1" [infiniteScrollThrottle]="400" (scrolled)="onScrollDown()" (scrolledUp)="onScrollUp()">
+        <h2 class="page-header"><small>CLOTHES</small></h2>
+        <section infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollUpDistance]="1" [infiniteScrollThrottle]="600" (scrolled)="onScrollDown()" (scrolledUp)="onScrollUp()">
             
             <ul class="row plp-ul">
                 <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
@@ -31,7 +31,7 @@
                     [style.margin.px]='imageMargin' />
                         <div class="row product-details">
                             <div class="brandname">
-                                {{product.PName}}
+                                {{product.Pname}}
                             </div>
                             <div class="branddesc">
                                 {{product.Pdescription}}
@@ -47,11 +47,11 @@
                 </li>
                 <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam2" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
                     <div class="prod-visual-section item product-tile">
-                        <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                        <img [src]='product.Pnimage' [title]='product.Pnname' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
                         <div class="row product-details">
                             <div class="brandname">
-                                {{product.PnName}}
+                                {{product.Pnname}}
                             </div>
                             <div class="branddesc">
                                 {{product.Pndescription}}
@@ -71,7 +71,7 @@
                     [style.margin.px]='imageMargin' />
                         <div class="row product-details">
                             <div class="brandname">
-                                {{product.PaName}}
+                                {{product.Paname}}
                             </div>
                             <div class="branddesc">
                                 {{product.Padescription}}
@@ -129,3 +129,4 @@
         </section>
     </div>
 </div>
+    
