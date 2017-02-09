@@ -31,7 +31,11 @@ export class ProductListComponent implements OnInit {
     iproduct = [];
     price1 = [];
     price2 = [];
+    // public priceFilter: any;
+    // public maxRange: any;
+    // public minRange: any;
 
+ 
   constructor(private _productService: ProductService) {
 
   }
@@ -53,39 +57,58 @@ export class ProductListComponent implements OnInit {
   }
   includePrice(x,y,z) {
 
-      $(".exam").hide();
-      $(".exam1").hide();
-      $(".exam2").hide();
-      $(".exam3").hide();
-      $(".exam4").show();
-      for(var j = 0; j < this.products.length; j++){
-        x=0;
-        y=this.products[j].price;
+      if (z) {
 
-          if(x==0 && y<=700){
+        $(".exam").hide();
+        $(".exam1").hide();
+        $(".exam2").hide();
+        $(".exam3").hide();
+        $(".exam4").show();
+        for(var j = 0; j < this.products.length; j++){
+          x=0;
+          y=this.products[j].price;
 
-            this.iproduct.push({Pname: this.products[j].productName, Pprice: this.products[j].price,  Pstock: this.products[j].stock, Pdescription: this.products[j].description, PstarRating: this.products[j].starRating, Pimage: this.products[j].imageUrl});
-            console.log(this.iproduct)
-          }
+            if(x==0 && y<=700){
+
+              this.iproduct.push({Pname: this.products[j].productName, Pprice: this.products[j].price,  Pstock: this.products[j].stock, Pdescription: this.products[j].description, PstarRating: this.products[j].starRating, Pimage: this.products[j].imageUrl});
+              console.log(this.iproduct)
+            }
+        }
+      }else{
+        $(".exam").show();
+        $(".exam1").hide();
+        $(".exam2").hide();
+        $(".exam3").hide();
+        $(".exam4").hide();
       }
   }
   includePrice1(a,b,c) {
 
-      $(".exam").hide();
-      $(".exam1").hide();
-      $(".exam2").show();
-      $(".exam3").hide();
-      $(".exam4").hide();
-      for(var k = 0; k < this.products.length; k++){
-        a=701;
-        b=this.products[k].price < 1500;
+      if(c){
+        $(".exam").hide();
+        $(".exam1").hide();
+        $(".exam2").show();
+        $(".exam3").hide();
+        $(".exam4").hide();
+        for(var k = 0; k < this.products.length; k++){
+          a=701;
+          b=this.products[k].price > 700;
 
           if(a>=701 && b ){
-
+              // console.log(a)
+              // console.log(b)
             this.price1.push({Pnname: this.products[k].productName, Pnprice: this.products[k].price,  Pnstock: this.products[k].stock, Pndescription: this.products[k].description, PnstarRating: this.products[k].starRating, Pnimage: this.products[k].imageUrl});
             console.log(this.price1)
           }
       }
+    }else{
+
+        $(".exam").show();
+        $(".exam1").hide();
+        $(".exam2").hide();
+        $(".exam3").hide();
+        $(".exam4").hide();
+    }
   }
   includePrice2(e,f,g) {
 
@@ -113,6 +136,7 @@ export class ProductListComponent implements OnInit {
           data => this.products.slice(0,5) = data;
           error => this.errorMessage = <any>error;
     });
+
   }
 
   onRatingClicked(message: string): void {

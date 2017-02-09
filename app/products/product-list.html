@@ -10,13 +10,19 @@
     </div>
 </div>
 <hr/>
-<div class="checkbox" >
+<div class="input-group" >
     <input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" /> Rs 700 and Below<br/>
     <input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 701 - 1500<br/>
     <input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above <br/> 
 </div>
+
 <div class="plp-grid">
-    <section class="plp-grid">
+    <section class="plp-grid" infinite-scroll
+                    [infiniteScrollDistance]="1"
+                    [infiniteScrollUpDistance]="1"
+                    [infiniteScrollThrottle]="500"
+                    (scrolled)="onScrollDown()"
+                    (scrolledUp)="onScrollUp()">
         <ul class="row plp-ul">
             
             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
