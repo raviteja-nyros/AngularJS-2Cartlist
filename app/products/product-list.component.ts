@@ -29,8 +29,8 @@ export class ProductListComponent implements OnInit {
     priceIncludes = [];
     ranges = [];
     iproduct = [];
-    ravi = [];
     price1 = [];
+    price2 = [];
     // public priceFilter: any;
     // public maxRange: any;
     // public minRange: any;
@@ -83,34 +83,36 @@ export class ProductListComponent implements OnInit {
       // alert(c)
       $(".exam").hide();
       for(var k = 0; k < this.products.length; k++){
-        a=0;
-        b=this.products[k].price;
-           // console.log("------------------")
-           // console.log(a)
-           // console.log(b)
-          if(a==0 && b<=1500){
-            this.ravi.push({Pnname: this.products[k].productName, Pnprice: this.products[k].price,  Pnstock: this.products[k].stock, Pndescription: this.products[k].description, PnstarRating: this.products[k].starRating, Pnimage: this.products[k].imageUrl});
-            console.log(this.ravi)
+        a=701;
+        b=this.products[k].price < 1500;
+            // console.log("------------------")
+            // console.log(a)
+            // console.log(b)
+          if(a>=701 && b ){
+              // console.log(a)
+              // console.log(b)
+            this.price1.push({Pnname: this.products[k].productName, Pnprice: this.products[k].price,  Pnstock: this.products[k].stock, Pndescription: this.products[k].description, PnstarRating: this.products[k].starRating, Pnimage: this.products[k].imageUrl});
+            console.log(this.price1)
           }
       }
   }
-  // includePrice2(a,b,c) {
-  //     // console.log("---------------")
-  //     // console.log(this.products)
-  //     // alert(c)
-  //     $(".exam").hide();
-  //     for(var k = 0; k < this.products.length; k++){
-  //       a=0;
-  //       b=this.products[k].price;
-  //          // console.log("------------------")
-  //          // console.log(a)
-  //          // console.log(b)
-  //         if(a==0 && b<=3000){
-  //           this.price1.push({Pnname: this.products[k].productName, Pnprice: this.products[k].price,  Pnstock: this.products[k].stock, Pndescription: this.products[k].description, PnstarRating: this.products[k].starRating, Pnimage: this.products[k].imageUrl});
-  //           console.log(this.price1)
-  //         }
-  //     }
-  // }
+  includePrice2(e,f,g) {
+      // console.log("---------------")
+      // console.log(this.products)
+      // alert(c)
+      $(".exam").hide();
+      for(var l = 0; l < this.products.length; l++){
+        e=1501;
+        f=this.products[l].price > 1501;
+           // console.log("------------------")
+           // console.log(a)
+           // console.log(b)
+          if(e>=1501 && f){
+            this.price2.push({Paname: this.products[l].productName, Paprice: this.products[l].price,  Pnstock: this.products[l].stock, Padescription: this.products[l].description, PastarRating: this.products[l].starRating, Paimage: this.products[l].imageUrl});
+            console.log(this.price2)
+          }
+      }
+  }
  
   ngOnInit(): void {
 

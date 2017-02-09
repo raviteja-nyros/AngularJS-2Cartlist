@@ -12,8 +12,8 @@
 <hr/>
 <div class="checkbox" >
     <input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" /> Rs 700 and Below<br/>
-    <input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 1500 and Below<br/>
-    <input type="checkbox" (change)="includePrice2(a,b,$event.target.checked)" /> Rs 3000 and Below<br/>
+    <input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 701 - 1500<br/>
+    <input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above <br/> 
 <!--     <input type="checkbox" (click)="includePrice('3001,5000')" /> Rs 3000 - 5000 <br/>
     <input type="checkbox" (click)="includePrice('5001,100000000')" /> Rs 5001 and Above -->
 </div>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </li>
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of ravi | productFilter:listFilter">
+            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
                     <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
@@ -56,20 +56,20 @@
                 </div>
             </li> 
 
-            <!--  <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
+             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of price2 | productFilter:listFilter">
                 <div class="prod-visual-section item product-tile">
-                    <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    <img [src]='product.Paimage' [title]='product.PaName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
                     [style.margin.px]='imageMargin' />
                     <div class="row product-details">
-                        <div class="brandname">{{product.PnName}}</div>
-                        <div class="branddesc">{{product.Pndescription}}</div>
-                        <div class="productprice">{{product.Pnprice | currency:'USD': true:'1.2-2'}}</div>
+                        <div class="brandname">{{product.PaName}}</div>
+                        <div class="branddesc">{{product.Padescription}}</div>
+                        <div class="productprice">{{product.Paprice | currency:'USD': true:'1.2-2'}}</div>
                         <div class="star">
-                            <show-star [rating]='product.PnstarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            <show-star [rating]='product.PastarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
                         </div>
                     </div>
                 </div>
-            </li>     -->   
+            </li>       
 
             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of (products ? products.slice(0,16): []) | productFilter:listFilter ">
                 <div class="prod-visual-section item product-tile">
