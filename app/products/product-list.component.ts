@@ -31,9 +31,6 @@ export class ProductListComponent implements OnInit {
     iproduct = [];
     price1 = [];
     price2 = [];
-    // public priceFilter: any;
-    // public maxRange: any;
-    // public minRange: any;
 
  
   constructor(private _productService: ProductService) {

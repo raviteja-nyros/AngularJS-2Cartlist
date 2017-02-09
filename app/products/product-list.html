@@ -1,107 +1,131 @@
-<div class='row'>
-    <div class="input-group col-md-3 search-margin">
-        <div class="input-group">
-            <input type="text" class="form-control" [(ngModel)]='listFilter' placeholder="Search for...">
-            <div class="input-group-addon">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            </div>
-        </div><br/>
-        <button (click)="toggle($clickMe)">sort by name</button>
+<div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+            <li>
+                <a><input type="text" class="form-control" [(ngModel)]='listFilter' placeholder="Search for..."></a>
+            </li>
+        </ul>
+        <ul class="nav nav-sidebar ">
+            <li>
+                <a><input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" />Rs 700 and Below</a> 
+            </li>
+            <li>
+                <a><input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 701 - 1500</a>
+            </li>
+            <li>
+                <a><input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above</a>
+            </li>
+        </ul>
+        <ul class="nav nav-sidebar">
+            <li><a><button class="btn" (click)="toggle($clickMe)">sort by name</button></a></li>
+        </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Products</h1>
+        <section infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollUpDistance]="1" [infiniteScrollThrottle]="400" (scrolled)="onScrollDown()" (scrolledUp)="onScrollUp()">
+            
+            <ul class="row plp-ul">
+                <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
+                    <div class="prod-visual-section item product-tile">
+                        <img [src]='product.Pimage' [title]='product.PName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                        <div class="row product-details">
+                            <div class="brandname">
+                                {{product.PName}}
+                            </div>
+                            <div class="branddesc">
+                                {{product.Pdescription}}
+                            </div>
+                            <div class="productprice">
+                                {{product.Pprice | currency:'USD': true:'1.2-2'}}
+                            </div>
+                            <div class="star">
+                                <show-star [rating]='product.PstarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam2" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
+                    <div class="prod-visual-section item product-tile">
+                        <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                        <div class="row product-details">
+                            <div class="brandname">
+                                {{product.PnName}}
+                            </div>
+                            <div class="branddesc">
+                                {{product.Pndescription}}
+                            </div>
+                            <div class="productprice">
+                                {{product.Pnprice | currency:'USD': true:'1.2-2'}}
+                            </div>
+                            <div class="star">
+                                <show-star [rating]='product.PnstarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            </div>
+                        </div>
+                    </div>
+                </li> 
+                <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam3" style="height:330px" *ngFor="let product of price2 | productFilter:listFilter">
+                    <div class="prod-visual-section item product-tile">
+                        <img [src]='product.Paimage' [title]='product.PaName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                        <div class="row product-details">
+                            <div class="brandname">
+                                {{product.PaName}}
+                            </div>
+                            <div class="branddesc">
+                                {{product.Padescription}}
+                            </div>
+                            <div class="productprice">
+                                {{product.Paprice | currency:'USD': true:'1.2-2'}}
+                            </div>
+                            <div class="star">
+                                <show-star [rating]='product.PastarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            </div>
+                        </div>
+                    </div>
+                </li>       
+                <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of (products ? products.slice(0,16): []) | productFilter:listFilter ">
+                    <div class="prod-visual-section item product-tile">
+                        <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                        <div class="row product-details">
+                            <div class="brandname">
+                                {{product.productName}}
+                            </div>
+                            <div class="branddesc">
+                                {{product.description}}
+                            </div>
+                            <div class="productprice">
+                                {{product.price | currency:'USD': true:'1.2-2'}}
+                            </div>
+                            <div class="star">
+                                <show-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam1" style="height:330px" *ngFor="let product of (data ? data.slice(16,26): []) | productFilter:listFilter">
+                    <div class="prod-visual-section item product-tile">
+                        <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
+                    [style.margin.px]='imageMargin' />
+                        <div class="row product-details">
+                            <div class="brandname">
+                                {{product.productName}}
+                            </div>
+                            <div class="branddesc">
+                                {{product.description}}
+                            </div>
+                            <div class="productprice">
+                                {{product.price | currency:'USD': true:'1.2-2'}}
+                            </div>
+                            <div class="star">
+                                <show-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></show-star>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>      
+        </section>
     </div>
 </div>
-<hr/>
-<div class="input-group" >
-    <input type="checkbox" (change)="includePrice(x,y,$event.target.checked)" /> Rs 700 and Below<br/>
-    <input type="checkbox" (change)="includePrice1(a,b,$event.target.checked)" /> Rs 701 - 1500<br/>
-    <input type="checkbox" (change)="includePrice2(e,f,$event.target.checked)" /> Rs 1501 and Above <br/> 
-</div>
-
-<div class="plp-grid">
-    <section class="plp-grid" infinite-scroll
-                    [infiniteScrollDistance]="1"
-                    [infiniteScrollUpDistance]="1"
-                    [infiniteScrollThrottle]="500"
-                    (scrolled)="onScrollDown()"
-                    (scrolledUp)="onScrollUp()">
-        <ul class="row plp-ul">
-            
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam4" style="height:330px" *ngFor="let product of iproduct | productFilter:listFilter">
-                <div class="prod-visual-section item product-tile">
-                    <img [src]='product.Pimage' [title]='product.PName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
-                    [style.margin.px]='imageMargin' />
-                    <div class="row product-details">
-                        <div class="brandname">{{product.PName}}</div>
-                        <div class="branddesc">{{product.Pdescription}}</div>
-                        <div class="productprice">{{product.Pprice | currency:'USD': true:'1.2-2'}}</div>
-                        <div class="star">
-                            <show-star [rating]='product.PstarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam2" style="height:330px" *ngFor="let product of price1 | productFilter:listFilter">
-                <div class="prod-visual-section item product-tile">
-                    <img [src]='product.Pnimage' [title]='product.PnName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
-                    [style.margin.px]='imageMargin' />
-                    <div class="row product-details">
-                        <div class="brandname">{{product.PnName}}</div>
-                        <div class="branddesc">{{product.Pndescription}}</div>
-                        <div class="productprice">{{product.Pnprice | currency:'USD': true:'1.2-2'}}</div>
-                        <div class="star">
-                            <show-star [rating]='product.PnstarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
-                        </div>
-                    </div>
-                </div>
-            </li> 
-
-             <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam3" style="height:330px" *ngFor="let product of price2 | productFilter:listFilter">
-                <div class="prod-visual-section item product-tile">
-                    <img [src]='product.Paimage' [title]='product.PaName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
-                    [style.margin.px]='imageMargin' />
-                    <div class="row product-details">
-                        <div class="brandname">{{product.PaName}}</div>
-                        <div class="branddesc">{{product.Padescription}}</div>
-                        <div class="productprice">{{product.Paprice | currency:'USD': true:'1.2-2'}}</div>
-                        <div class="star">
-                            <show-star [rating]='product.PastarRating' (ratingClicked)='onRatingClicked($event)'></show-star>
-                        </div>
-                    </div>
-                </div>
-            </li>       
-
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam" style="height:330px" *ngFor="let product of (products ? products.slice(0,16): []) | productFilter:listFilter ">
-                <div class="prod-visual-section item product-tile">
-                    <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
-                    [style.margin.px]='imageMargin' />
-                    <div class="row product-details">
-                        <div class="brandname">{{product.productName}}</div>
-                        <div class="branddesc">{{product.description}}</div>
-                        <div class="productprice">{{product.price | currency:'USD': true:'1.2-2'}}</div>
-                        <div class="star">
-                            <show-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></show-star>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="plp-list prod-holder col-md-4 col-xs-6 col-lg-4 exam1" style="height:330px" *ngFor="let product of (data ? data.slice(16,26): []) | productFilter:listFilter">
-                <div class="prod-visual-section item product-tile">
-                    <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.height.px]='imageHeight'
-                    [style.margin.px]='imageMargin' />
-                    <div class="row product-details">
-                        <div class="brandname">{{product.productName}}</div>
-                        <div class="branddesc">{{product.description}}</div>
-                        <div class="productprice">{{product.price | currency:'USD': true:'1.2-2'}}</div>
-                        <div class="star">
-                            <show-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></show-star>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            
-
-        </ul>
-       
-    </section>
-</div>
-
